@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>library_v1</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+
+    <body>
+        <header>
+            <h1>Library Demo</h1>
+        </header>
+
+
+        <section class="section">
+            <h2>Register</h2>
+            <div class="row">
+                <input id="reg_username" placeholder="username (3-100)" />
+                <input id="reg_email" placeholder="email (valid!)"/>
+                <input id="reg_password" placeholder="password (≥6)" />
+                <button id="btn_reg">register</button>
+            </div>
+            <pre id="reg_out" class="muted">waiting...</pre>
+        </section>
+
+        <section class="section">
+            <h2>Login</h2>
+            <div class="row">
+                <input id="auth_username" placeholder="username" />
+                <input id="auth_password" placeholder="password" />
+                <button id="btn_auth">login</button>
+            </div>
+            <pre id="auth_status" class="muted">not set</span>
+        </section>
+
+
+        <div class="split">
+            <section class="section">
+                <h2>View Books</h2>
+                <div class="row">
+                    <button id="btn_listbooks">list all the books</button>
+                    <input id="q" placeholder="search by title or author"/>
+                    <button id="btn_searchbook">search</button>
+                </div>
+                <pre id="search_out" class="muted">no data</pre>
+            </section>
+
+            <section class="section">
+                <h2>Borrow / Return </h2>
+                <div class="row">
+                    <input id="borrow_userid" placeholder="user ID" />
+                    <input id="borrow_bookid" placeholder="book ID" />
+                    <button id="btn_borrow">borrow</button> 
+                </div>
+                <div class="row">
+                    <input id="return_recordid" placeholder="record ID" />
+                    <button id="btn_return">return</button>
+                </div>
+                <pre id="bandr_out" class="muted">no data</pre>
+            </section>
+        </div>
+
+
+        <section class="section">
+            <h2>Borrow History</h2>
+            <div class="row">
+                <input id="history_userid" placeholder="user ID" />
+                <button id="btn_history">search</button>
+            </div>
+            <pre id="history_out" class="muted">no data</pre>
+        </section>
+
+
+        <script src="app.js"></script>
+    </body>
+</html>
